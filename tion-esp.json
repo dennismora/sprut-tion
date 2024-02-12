@@ -1,8 +1,8 @@
 {
-  "name": "Tion Breezer ESP",
+  "name": "Tion lite",
   "manufacturer": "Tion",
-  "model": "3S / 4S",
-  "catalogId": 3910,
+  "model": "lite",
+  "catalogId": 1800,
   "services": [
     {
       "name": "Бризер",
@@ -41,7 +41,7 @@
             "topicSet": "(1)/climate/(2)/target_temperature/command"
           },
           "minValue": 0,
-          "maxValue": 30,
+          "maxValue": 25,
           "minStep": 1
         },
         {
@@ -87,24 +87,6 @@
           },
           "minValue": 1,
           "maxValue": 6
-        }
-      ]
-    },
-    {
-      "name": "Режим рециркуляции",
-      "type": "Switch",
-      "characteristics": [
-        {
-          "type": "On",
-          "link": {
-            "type": "String",
-            "topicGet": "(1)/switch/recirculation/state",
-            "topicSet": "(1)/switch/recirculation/command",
-            "map": {
-              "false": "OFF",
-              "true": "ON"
-            }
-          }
         }
       ]
     },
